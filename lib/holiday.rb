@@ -59,9 +59,9 @@ end
 def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, values|
     values.each do |holiday, supplies_array|
-      if supplies_array == nil
-        binding.pry 
-      end
+      
+      binding.pry if supplies_array == nil
+     
       supplies_array.include?("BBQ")
      
     end
